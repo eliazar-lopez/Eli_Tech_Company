@@ -1,0 +1,177 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ECF0F1; /* Light gray background */
+    color: #333333; /* Dark gray text */
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C3E50; /* Dark blue background */
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 1rem; /* Space between logo and title */
+}
+
+
+.header h1 {
+    font-family: 'Poppins', sans-serif; /* Custom font for headings */
+    font-weight: 600;
+}
+
+h2, h3 {
+    text-align: center; /* Center both h2 and h3 */
+    margin: 0;
+    padding: 1rem 0;
+}
+
+
+/* Mission Section */
+.mission {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.mission h2 {
+    color: #2C3E50; /* Dark blue */
+    font-family: 'Poppins', sans-serif;
+    text-align: center; /* Center the heading */
+    margin-bottom: 1.5rem; /* Optional: Adjust space below heading */
+}
+
+.mission p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Products Section */
+.products {
+    display: flex;
+    flex-wrap: wrap;  /* Allow products to wrap as the screen resizes */
+    justify-content: space-between;  /* Distribute space between items */
+    gap: 1.5rem;  /* Adds space between items */
+    padding: 2rem;
+    background-color: #fff;
+    max-width: 1200px; /* Optional: Limit the maximum width of the section */
+    margin: 0 auto;  /* Center the section horizontally */
+}
+.products h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 2rem; /* Optional: Adds space below the heading */
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping of items when screen is small */
+    padding: 2rem;
+    background-color: #fff;
+}
+
+
+.product-item:hover {
+    transform: translateY(-10px); /* Lift the item on hover */
+}
+
+.product-item img {
+    width: 600px;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.product-item h3 {
+    margin-top: 1rem;
+    text-align: center; /* Center the product names */
+    color: #E74C3C; /* Accent color for titles */
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .product-item {
+        width: 100%;  /* Stack products on smaller screens */
+    }
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  /* Allows wrapping of items when screen is small */
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.team h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 2rem; /* Optional: Adds space below the heading */
+}
+
+.team-member h3 {
+    text-align: center; /* Center the team member names */
+    color: #2C3E50; /* Dark blue */
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px); /* Lift the item on hover */
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular images */
+    object-fit: cover;
+}
+
+.team-member h3 {
+    margin-top: 1rem;
+    color: #2C3E50; /* Dark blue */
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .team-member {
+        width: 100%;  /* Stack team members on smaller screens */
+    }
+}
+
+footer {
+    background-color: #2C3E50; /* Dark blue background */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
